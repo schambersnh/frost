@@ -1,0 +1,126 @@
+.year-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-button {
+  padding: 12px 24px;
+  background: white;
+  border: 2px solid #1a472a;
+  border-radius: 8px;
+  color: #1a472a;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.back-button:hover {
+  background: #1a472a;
+  color: white;
+}
+
+.year-title {
+  font-size: 42px;
+  color: #1a472a;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.teams-table {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 1fr 150px;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.table-header {
+  background: #f8f8f8;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #1a472a;
+  margin-bottom: 10px;
+}
+
+.table-row {
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-row:hover {
+  background: #f8f8f8;
+  border-radius: 10px;
+}
+
+.table-row.place-1 {
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.1) 0%, transparent 100%);
+}
+
+.table-row.place-2 {
+  background: linear-gradient(90deg, rgba(192, 192, 192, 0.1) 0%, transparent 100%);
+}
+
+.table-row.place-3 {
+  background: linear-gradient(90deg, rgba(205, 127, 50, 0.1) 0%, transparent 100%);
+}
+
+.col-place {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a472a;
+}
+
+.place-number {
+  font-size: 24px;
+}
+
+.medal {
+  font-size: 28px;
+}
+
+.col-team {
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+}
+
+.col-players {
+  color: #666;
+  font-size: 16px;
+}
+
+.col-score {
+  font-size: 20px;
+  font-weight: 700;
+  color: #c41e3a;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .col-score {
+    text-align: left;
+  }
+}
