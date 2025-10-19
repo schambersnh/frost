@@ -152,7 +152,11 @@
   line-height: 1.4;
 }
 
-.home-date-banner {
+.home-date-section {
+  margin-bottom: 30px;
+}
+
+.date-header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,18 +164,8 @@
   padding: 25px 40px;
   background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 165, 0, 0.2) 100%);
   border: 3px solid rgba(255, 215, 0, 0.6);
-  border-radius: 20px;
-  margin-bottom: 30px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  border-radius: 20px 20px 0 0;
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
-}
-
-.home-date-banner:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
-  background: linear-gradient(135deg, rgba(255, 215, 0, 0.3) 0%, rgba(255, 165, 0, 0.3) 100%);
 }
 
 .date-icon {
@@ -195,16 +189,59 @@
   font-size: 32px;
   color: #ffffff;
   font-weight: 800;
-  margin: 0 0 8px 0;
+  margin: 0;
   text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
-.date-action {
-  font-size: 14px;
-  color: #ffd700;
-  margin: 0;
-  font-weight: 600;
-  opacity: 0.9;
+.calendar-buttons {
+  display: flex;
+  gap: 0;
+}
+
+.calendar-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 25px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 215, 0, 0.6);
+  border-top: none;
+  cursor: pointer;
+}
+
+.calendar-button.google {
+  background: linear-gradient(135deg, rgba(66, 133, 244, 0.3) 0%, rgba(52, 168, 83, 0.3) 100%);
+  color: #ffffff;
+  border-radius: 0 0 0 18px;
+  border-right: 1px solid rgba(255, 215, 0, 0.6);
+}
+
+.calendar-button.google:hover {
+  background: linear-gradient(135deg, rgba(66, 133, 244, 0.5) 0%, rgba(52, 168, 83, 0.5) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(66, 133, 244, 0.4);
+}
+
+.calendar-button.apple {
+  background: linear-gradient(135deg, rgba(128, 128, 128, 0.3) 0%, rgba(64, 64, 64, 0.3) 100%);
+  color: #ffffff;
+  border-radius: 0 0 18px 0;
+  border-left: 1px solid rgba(255, 215, 0, 0.6);
+}
+
+.calendar-button.apple:hover {
+  background: linear-gradient(135deg, rgba(128, 128, 128, 0.5) 0%, rgba(64, 64, 64, 0.5) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(128, 128, 128, 0.4);
+}
+
+.calendar-icon {
+  font-size: 20px;
 }
 
 .home-description {
@@ -258,7 +295,7 @@
     margin-bottom: 25px;
   }
 
-  .home-date-banner {
+  .date-header {
     padding: 18px 20px;
     gap: 12px;
     border-width: 2px;
@@ -276,8 +313,32 @@
     font-size: 20px;
   }
 
-  .date-action {
-    font-size: 11px;
+  .calendar-buttons {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .calendar-button {
+    padding: 16px 20px;
+    font-size: 14px;
+    border-left: 2px solid rgba(255, 215, 0, 0.6);
+    border-right: 2px solid rgba(255, 215, 0, 0.6);
+  }
+
+  .calendar-button.google {
+    border-radius: 0;
+    border-right: 2px solid rgba(255, 215, 0, 0.6);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.6);
+  }
+
+  .calendar-button.apple {
+    border-radius: 0 0 18px 18px;
+    border-left: 2px solid rgba(255, 215, 0, 0.6);
+    border-top: 1px solid rgba(255, 215, 0, 0.6);
+  }
+
+  .calendar-icon {
+    font-size: 18px;
   }
 
   .home-description {
@@ -307,7 +368,7 @@
     font-size: 14px;
   }
 
-  .home-date-banner {
+  .date-header {
     padding: 15px;
     gap: 10px;
   }
@@ -318,5 +379,14 @@
 
   .date-main {
     font-size: 18px;
+  }
+
+  .calendar-button {
+    padding: 14px 16px;
+    font-size: 13px;
+  }
+
+  .calendar-icon {
+    font-size: 16px;
   }
 }
