@@ -14,14 +14,22 @@ const Gallery = () => {
             <h2 className="year-header">{yearData.year} Photos</h2>
 
             {yearData.galleryUrl ? (
-              <div className="gallery-embed-container">
-                <iframe
-                  src={yearData.galleryUrl}
-                  title={`${yearData.year} Photo Gallery`}
-                  className="gallery-iframe"
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
+              <div className="gallery-link-section">
+                <div className="gallery-preview">
+                  <div className="gallery-icon">📸</div>
+                  <h3>View {yearData.year} Photos</h3>
+                  <p>Check out all the memorable moments from this year's competition</p>
+                </div>
+                <a
+                  href={yearData.galleryUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="gallery-button"
+                >
+                  <span className="gallery-button-icon">🖼️</span>
+                  Open Photo Album
+                  <span className="gallery-button-arrow">→</span>
+                </a>
               </div>
             ) : yearData.uploadUrl ? (
               <div className="gallery-upload-section">
