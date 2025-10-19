@@ -1,127 +1,123 @@
-.year-detail-container {
+.past-scores-container {
   max-width: 1400px;
   margin: 0 auto;
 }
 
-.back-button {
-  padding: 12px 24px;
-  background: white;
-  border: 2px solid #1a472a;
-  border-radius: 8px;
-  color: #1a472a;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-bottom: 30px;
-}
-
-.back-button:hover {
-  background: #1a472a;
-  color: white;
-}
-
-.year-title {
-  font-size: 42px;
-  color: #1a472a;
-  margin-bottom: 40px;
+.page-subtitle {
   text-align: center;
-  font-weight: 800;
+  color: #666;
+  font-size: 16px;
+  margin-top: -30px;
+  margin-bottom: 50px;
 }
 
-.teams-table {
+.loading {
+  text-align: center;
+  font-size: 24px;
+  color: #1e3a5f;
+  padding: 60px;
+}
+
+.scores-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.year-section {
   background: white;
   border-radius: 20px;
   padding: 30px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.table-header,
-.table-row {
-  display: grid;
-  grid-template-columns: 120px 2fr 2fr 60px 60px 60px 60px 60px 60px 120px;
-  gap: 15px;
-  padding: 20px;
-  align-items: center;
+.year-header {
+  font-size: 36px;
+  color: #1e3a5f;
+  margin-bottom: 30px;
+  font-weight: 800;
+  border-bottom: 3px solid #5dade2;
+  padding-bottom: 15px;
+}
+
+.teams-table {
+  display: flex;
+  flex-direction: column;
 }
 
 .table-header {
-  background: #f8f8f8;
+  display: grid;
+  grid-template-columns: 100px 2fr 2fr 60px 60px 60px 60px 60px 60px 120px;
+  gap: 15px;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5f8d 100%);
   border-radius: 10px;
+  margin-bottom: 15px;
   font-weight: 700;
-  color: #1a472a;
-  margin-bottom: 10px;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.table-row {
-  border-bottom: 1px solid #f0f0f0;
+.team-row {
+  display: grid;
+  grid-template-columns: 100px 2fr 2fr 60px 60px 60px 60px 60px 60px 120px;
+  gap: 15px;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
   transition: all 0.3s ease;
+  align-items: center;
 }
 
-.table-row:last-child {
+.team-row:last-child {
   border-bottom: none;
 }
 
-.table-row:hover {
-  background: #f8f8f8;
-  border-radius: 10px;
-}
-
-.table-row.place-1 {
-  background: linear-gradient(90deg, rgba(255, 215, 0, 0.1) 0%, transparent 100%);
-}
-
-.table-row.place-2 {
-  background: linear-gradient(90deg, rgba(192, 192, 192, 0.1) 0%, transparent 100%);
-}
-
-.table-row.place-3 {
-  background: linear-gradient(90deg, rgba(205, 127, 50, 0.1) 0%, transparent 100%);
+.team-row:hover {
+  background: rgba(93, 173, 226, 0.05);
+  transform: translateX(5px);
 }
 
 .col-place {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 20px;
+  gap: 8px;
   font-weight: 700;
-  color: #1a472a;
+  font-size: 18px;
 }
 
-.place-number {
-  font-size: 24px;
-}
-
-.medal {
+.trophy {
   font-size: 28px;
 }
 
+.place-number {
+  color: #1e3a5f;
+}
+
 .col-team {
-  font-weight: 600;
   font-size: 18px;
-  color: #333;
+  font-weight: 700;
+  color: #1e3a5f;
 }
 
 .col-players {
-  color: #666;
   font-size: 16px;
+  color: #666;
 }
 
 .col-game {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
-  color: #1a472a;
+  color: #1e3a5f;
   text-align: center;
-  background: #f0f8f4;
+  background: #e3f2fd;
   padding: 8px;
   border-radius: 6px;
 }
 
-.table-row .col-game {
-  background: #e8f5e9;
-}
-
 .col-score {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: #c41e3a;
   text-align: center;
@@ -149,13 +145,13 @@
 }
 
 @media (max-width: 1200px) {
-  .teams-table {
+  .year-section {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     position: relative;
   }
 
-  .teams-table::after {
+  .year-section::after {
     content: '← Scroll for more →';
     position: sticky;
     left: 50%;
@@ -171,36 +167,40 @@
     pointer-events: none;
   }
 
-  .table-header,
-  .table-row {
+  .teams-table {
     min-width: 1000px;
   }
 }
 
 @media (max-width: 768px) {
-  .year-detail-container {
-    padding: 0;
-  }
-
-  .back-button {
-    padding: 10px 20px;
-    font-size: 14px;
+  .page-title {
+    font-size: 32px;
     margin-bottom: 20px;
   }
 
-  .year-title {
-    font-size: 32px;
+  .page-subtitle {
+    font-size: 14px;
+    margin-top: -10px;
     margin-bottom: 30px;
   }
 
-  .teams-table {
+  .scores-list {
+    gap: 30px;
+  }
+
+  .year-section {
     padding: 15px;
     border-radius: 15px;
-    overflow-x: auto;
+  }
+
+  .year-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   .table-header,
-  .table-row {
+  .team-row {
     grid-template-columns: 70px 1.5fr 1.5fr 50px 50px 50px 50px 50px 50px 80px;
     gap: 8px;
     padding: 12px 10px;
@@ -217,11 +217,7 @@
     gap: 5px;
   }
 
-  .place-number {
-    font-size: 16px;
-  }
-
-  .medal {
+  .trophy {
     font-size: 20px;
   }
 

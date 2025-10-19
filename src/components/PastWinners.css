@@ -1,14 +1,58 @@
 .past-winners-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .page-title {
   font-size: 42px;
-  color: #1a472a;
+  color: #1e3a5f;
   margin-bottom: 40px;
   text-align: center;
   font-weight: 800;
+}
+
+.tabbed-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tab-sidebar {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+.tab-button {
+  padding: 12px 30px;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tab-button:hover {
+  background: #f5f5f5;
+  border-color: #c41e3a;
+  color: #c41e3a;
+  transform: translateY(-2px);
+}
+
+.tab-button.active {
+  background: linear-gradient(135deg, #c41e3a 0%, #a01729 100%);
+  border-color: #c41e3a;
+  color: white;
+  box-shadow: 0 4px 15px rgba(196, 30, 58, 0.3);
+}
+
+.tab-content {
+  width: 100%;
 }
 
 .winners-list {
@@ -66,7 +110,7 @@
 
 .team-name {
   font-size: 28px;
-  color: #1a472a;
+  color: #1e3a5f;
   margin-bottom: 10px;
   font-weight: 700;
 }
@@ -79,7 +123,7 @@
 
 .score {
   font-size: 20px;
-  color: #1a472a;
+  color: #1e3a5f;
   font-weight: 600;
 }
 
@@ -89,7 +133,7 @@
 
 .video-container h4 {
   font-size: 20px;
-  color: #1a472a;
+  color: #1e3a5f;
   margin-bottom: 15px;
   font-weight: 600;
 }
@@ -103,5 +147,196 @@
 @media (max-width: 768px) {
   .victory-video {
     height: 250px;
+  }
+}
+
+/* Cookie Winners Styles */
+.cookie-winners-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.cookie-winner-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cookie-winner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cookie-winner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.cookie-icon {
+  font-size: 48px;
+}
+
+.cookie-winner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.cookie-images-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cookie-image-wrapper {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.cookie-winner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.cookie-winner-image:hover {
+  transform: scale(1.02);
+}
+
+.no-image-placeholder {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  background: #f5f5f5;
+  border: 2px dashed #ddd;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.placeholder-icon {
+  font-size: 64px;
+  opacity: 0.3;
+}
+
+.no-image-placeholder p {
+  color: #999;
+  font-size: 16px;
+  margin: 0;
+}
+
+.cookie-winner-name {
+  font-size: 28px;
+  color: #1e3a5f;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .tabbed-content {
+    gap: 20px;
+  }
+
+  .tab-sidebar {
+    gap: 10px;
+  }
+
+  .tab-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .winners-list,
+  .cookie-winners-list {
+    gap: 25px;
+  }
+
+  .winner-card,
+  .cookie-winner-card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .winner-header,
+  .cookie-winner-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+
+  .winner-year {
+    font-size: 28px;
+  }
+
+  .trophy,
+  .cookie-icon {
+    font-size: 36px;
+  }
+
+  .team-name,
+  .cookie-winner-name {
+    font-size: 22px;
+  }
+
+  .players {
+    font-size: 16px;
+  }
+
+  .score {
+    font-size: 18px;
+  }
+
+  .victory-video {
+    height: 200px;
+  }
+
+  .video-container h4 {
+    font-size: 18px;
+  }
+
+  .cookie-images-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cookie-image-wrapper {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .no-image-placeholder {
+    height: 250px;
+  }
+
+  .placeholder-icon {
+    font-size: 48px;
+  }
+
+  .no-image-placeholder p {
+    font-size: 14px;
   }
 }

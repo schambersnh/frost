@@ -1,0 +1,157 @@
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(30, 58, 95, 0.1) 0%, rgba(93, 173, 226, 0.1) 100%);
+  border-radius: 20px;
+  border: 2px solid rgba(93, 173, 226, 0.3);
+}
+
+.about-main-title {
+  font-size: 48px;
+  color: #2c5f8d;
+  margin: 0 0 15px 0;
+  font-weight: 800;
+  letter-spacing: 8px;
+}
+
+.about-subtitle {
+  font-size: 24px;
+  color: #5dade2;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.about-address {
+  font-size: 18px;
+  color: #555;
+  margin: 0;
+}
+
+.about-content {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.about-section:last-child {
+  margin-bottom: 0;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  color: #2c5f8d;
+  margin-bottom: 20px;
+  font-weight: 800;
+  border-bottom: 2px solid #5dade2;
+  padding-bottom: 10px;
+}
+
+.about-section h3 {
+  font-size: 20px;
+  color: #3b7fb8;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.about-section p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-section ul {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+.about-section li {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.note {
+  background: #fff9e6;
+  border-left: 4px solid #f39c12;
+  padding: 15px;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .about-header {
+    padding: 20px 15px;
+    margin-bottom: 30px;
+  }
+
+  .about-main-title {
+    font-size: 36px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+  }
+
+  .about-subtitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .about-event-details {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .about-address {
+    font-size: 14px;
+  }
+
+  .about-content {
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+
+  .about-section {
+    margin-bottom: 30px;
+  }
+
+  .about-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .about-section h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
+
+  .about-section p,
+  .about-section li {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .about-section ul {
+    padding-left: 25px;
+  }
+
+  .note {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,322 @@
+.home-container {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #0a1628 0%, #1a2842 50%, #0d1b2a 100%);
+  position: relative;
+  overflow: hidden;
+  transition: opacity 1.5s ease-out;
+}
+
+.home-container.fade-out {
+  opacity: 0;
+}
+
+.stars-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, white, transparent),
+    radial-gradient(2px 2px at 60% 70%, white, transparent),
+    radial-gradient(1px 1px at 50% 50%, white, transparent),
+    radial-gradient(1px 1px at 80% 10%, white, transparent),
+    radial-gradient(2px 2px at 90% 60%, white, transparent),
+    radial-gradient(1px 1px at 33% 80%, white, transparent),
+    radial-gradient(1px 1px at 15% 90%, white, transparent);
+  background-size: 200% 200%;
+  animation: twinkle 5s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.shooting-star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+  animation: shoot 2s linear;
+  pointer-events: none;
+}
+
+@keyframes shoot {
+  0% {
+    transform: translate(0, 0) rotate(-45deg);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(800px, 800px) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+.shooting-star::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+  transform: translateX(-80px);
+  border-radius: 50%;
+}
+
+.home-content {
+  text-align: center;
+  max-width: 800px;
+  background: rgba(30, 58, 95, 0.6);
+  border-radius: 30px;
+  padding: 80px 60px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 100px rgba(93, 173, 226, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(93, 173, 226, 0.5);
+  animation: fadeIn 1s ease-in, glow 3s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 100px rgba(93, 173, 226, 0.2);
+  }
+  50% {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 120px rgba(93, 173, 226, 0.4);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-title {
+  font-size: 96px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: 16px;
+  text-shadow:
+    0 0 20px rgba(93, 173, 226, 0.8),
+    0 0 40px rgba(93, 173, 226, 0.6),
+    3px 3px 6px rgba(0, 0, 0, 0.3);
+  animation: titlePulse 3s ease-in-out infinite;
+}
+
+@keyframes titlePulse {
+  0%, 100% {
+    transform: scale(1);
+    text-shadow:
+      0 0 20px rgba(93, 173, 226, 0.8),
+      0 0 40px rgba(93, 173, 226, 0.6),
+      3px 3px 6px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    transform: scale(1.02);
+    text-shadow:
+      0 0 30px rgba(93, 173, 226, 1),
+      0 0 60px rgba(93, 173, 226, 0.8),
+      3px 3px 6px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.home-subtitle {
+  font-size: 24px;
+  color: #5dade2;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.home-date-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px 40px;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 165, 0, 0.2) 100%);
+  border: 3px solid rgba(255, 215, 0, 0.6);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.home-date-banner:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.3) 0%, rgba(255, 165, 0, 0.3) 100%);
+}
+
+.date-icon {
+  font-size: 50px;
+}
+
+.date-content {
+  text-align: left;
+}
+
+.date-label {
+  font-size: 14px;
+  color: #ffd700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+}
+
+.date-main {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.date-action {
+  font-size: 14px;
+  color: #ffd700;
+  margin: 0;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.home-description {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.home-description p {
+  font-size: 18px;
+  color: #e8e8e8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.magic-text {
+  font-size: 22px !important;
+  font-weight: 600;
+  color: #ffffff !important;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 215, 0, 1), 0 0 30px rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 20px;
+  }
+
+  .home-content {
+    padding: 40px 25px;
+  }
+
+  .home-title {
+    font-size: 56px;
+    letter-spacing: 8px;
+  }
+
+  .home-subtitle {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+  }
+
+  .home-date-banner {
+    padding: 18px 20px;
+    gap: 12px;
+    border-width: 2px;
+  }
+
+  .date-icon {
+    font-size: 36px;
+  }
+
+  .date-label {
+    font-size: 11px;
+  }
+
+  .date-main {
+    font-size: 20px;
+  }
+
+  .date-action {
+    font-size: 11px;
+  }
+
+  .home-description {
+    margin-top: 30px;
+  }
+
+  .home-description p {
+    font-size: 15px;
+  }
+
+  .magic-text {
+    font-size: 17px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content {
+    padding: 30px 20px;
+  }
+
+  .home-title {
+    font-size: 48px;
+    letter-spacing: 6px;
+  }
+
+  .home-subtitle {
+    font-size: 14px;
+  }
+
+  .home-date-banner {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .date-icon {
+    font-size: 30px;
+  }
+
+  .date-main {
+    font-size: 18px;
+  }
+}

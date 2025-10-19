@@ -1,0 +1,111 @@
+{
+  "years": [
+    {
+      "year": 2025,
+      "galleryUrl": null,
+      "uploadUrl": "https://drive.google.com/drive/folders/15Nbz98uUOTiVQr8b26Hjrslw2qVPETNe?usp=sharing",
+      "cookieWinner": null,
+      "teams": []
+    },
+    {
+      "year": 2024,
+      "galleryUrl": "https://drive.google.com/embeddedfolderview?id=1MMn425Rn_ZYpVkaNA_wGgqUcctdGQ96t#grid",
+      "cookieWinner": {
+        "name": "The Thirst Noel",
+        "imageUrl": "/images/cookie-winner-2024.JPG",
+        "cookieImageUrl": "/images/cookie-2024.JPG"
+      },
+      "teams": [
+        {
+          "teamId": "2024-001",
+          "teamName": "The Lone Oakes",
+          "players": ["Brian", "Hannah"],
+          "score": 30,
+          "gameScores": [6, 8, 8, 4, 1, 3],
+          "cookieBonus": 0,
+          "place": 1,
+          "isWinner": true,
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        },
+        {
+          "teamId": "2024-002",
+          "teamName": "The Thirst Noel",
+          "players": ["Johnny", "Emily"],
+          "score": 27,
+          "gameScores": [8, 1, 2, 8, 1, 2],
+          "cookieBonus": 5,
+          "isCookieWinner": true,
+          "place": 2,
+          "isWinner": false,
+          "videoUrl": null
+        },
+        {
+          "teamId": "2024-003",
+          "teamName": "Crabby Bakers",
+          "players": ["Michaela", "Meghan"],
+          "score": 23,
+          "gameScores": [1, 3, 1, 2, 8, 8],
+          "cookieBonus": 0,
+          "place": 3,
+          "isWinner": false,
+          "videoUrl": null
+        },
+        {
+          "teamId": "2024-004",
+          "teamName": "Shrek is Christmas Adjacent (S.I.C.A)",
+          "players": ["Sean", "Katie"],
+          "score": 19,
+          "gameScores": [1, 4, 4, 6, 2, 2],
+          "cookieBonus": 0,
+          "place": 4,
+          "isWinner": false,
+          "videoUrl": null
+        },
+        {
+          "teamId": "2024-005",
+          "teamName": "Ho Ho Hosts",
+          "players": ["Stephen", "Tiffany"],
+          "score": 19,
+          "gameScores": [2, 2, 2, 3, 6, 4],
+          "cookieBonus": 0,
+          "place": 4,
+          "isWinner": false,
+          "videoUrl": null
+        },
+        {
+          "teamId": "2024-006",
+          "teamName": "Da Pink Flamingos Yahurrrd",
+          "players": ["Nara"],
+          "score": 18,
+          "gameScores": [4, 1, 6, 1, 4, 2],
+          "cookieBonus": 0,
+          "place": 6,
+          "isWinner": false,
+          "videoUrl": null
+        },
+        {
+          "teamId": "2024-007",
+          "teamName": "Merry Ricmas",
+          "players": ["Derek", "Eric"],
+          "score": 18,
+          "gameScores": [1, 6, 1, 1, 3, 6],
+          "cookieBonus": 0,
+          "place": 6,
+          "isWinner": false,
+          "videoUrl": null
+        },
+        {
+          "teamId": "2024-008",
+          "teamName": "The Burrito Bandits",
+          "players": ["Sebastian", "Mitsi"],
+          "score": 11,
+          "gameScores": [3, 1, 3, 1, 1, 2],
+          "cookieBonus": 0,
+          "place": 8,
+          "isWinner": false,
+          "videoUrl": null
+        }
+      ]
+    }
+  ]
+}
