@@ -6,6 +6,7 @@ import PastScores from './PastScores';
 import YearDetail from './YearDetail';
 import Gallery from './Gallery';
 import About from './About';
+import Survey from './Survey';
 import './Dashboard.css';
 
 const Dashboard = () => {
@@ -43,6 +44,7 @@ const Dashboard = () => {
           <Link to="/winners" className="nav-link">Past Winners</Link>
           <Link to="/scores" className="nav-link">Past Scores</Link>
           <Link to="/gallery" className="nav-link">Gallery</Link>
+          <Link to="/survey" className="nav-link">Survey</Link>
         </div>
       </nav>
 
@@ -53,6 +55,7 @@ const Dashboard = () => {
           <Route path="/winners" element={<PastWinners />} />
           <Route path="/scores" element={<PastScores />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/survey" element={<Survey />} />
           <Route path="/year/:year" element={<YearDetail />} />
         </Routes>
       </div>
