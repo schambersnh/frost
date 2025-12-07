@@ -44,7 +44,7 @@ const Home = () => {
             <div className="date-icon">📅</div>
             <div className="date-content">
               <p className="date-label">Next Competition</p>
-              <p className="date-main">December 12th, 2026</p>
+              <p className="date-main">December 12th, 2026 at 3:00PM</p>
             </div>
           </div>
           <div className="calendar-buttons">
