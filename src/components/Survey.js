@@ -9,43 +9,16 @@ const Survey = () => {
 
       <div className="survey-content">
         <div className="survey-card">
-          <div className="survey-icon">✉️</div>
-          <h2 className="survey-title">RSVP for F.R.O.S.T. 2025</h2>
+          <div className="survey-icon">🎉</div>
+          <h2 className="survey-title">Thank You for Attending F.R.O.S.T. 2025!</h2>
           <p className="survey-description">
-            Please fill out this form whether you're attending or not! If you are coming,
-            let us know your team name and overnight plans. If you can't make it, we'd still
-            love to hear from you so we can plan accordingly.
+            Thank you for coming to F.R.O.S.T. 2025! We hope you had an amazing time.
+            We will upload a new survey as F.R.O.S.T. 2026 gets closer.
           </p>
 
-          <div className="survey-features">
-            <div className="feature-item">
-              <span className="feature-icon">✅</span>
-              <span className="feature-text">Confirm attendance (yes or no)</span>
-            </div>
-            <div className="feature-item">
-              <span className="feature-icon">👥</span>
-              <span className="feature-text">Share team details (if attending)</span>
-            </div>
-            <div className="feature-item">
-              <span className="feature-icon">🛏️</span>
-              <span className="feature-text">Indicate overnight plans (if attending)</span>
-            </div>
+          <div className="survey-note">
+            Stay tuned for updates about F.R.O.S.T. 2026!
           </div>
-
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfcCnY4w_A-5tpiTf3zblVayRmCrGcrK0Ga8T7TknsUGM8gSg/viewform?usp=dialog"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="survey-button"
-          >
-            <span className="button-icon">📝</span>
-            Submit RSVP
-            <span className="button-arrow">→</span>
-          </a>
-
-          <p className="survey-note">
-            Opens in a new tab • Please respond even if you cannot attend!
-          </p>
         </div>
       </div>
     </div>

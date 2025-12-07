@@ -4,8 +4,124 @@
       "year": 2025,
       "galleryUrl": null,
       "uploadUrl": "https://photos.app.goo.gl/GSpef3WvK2KYR5628",
-      "cookieWinner": null,
-      "teams": []
+      "cookieWinner": {
+        "name": "Ho Ho Hoes",
+        "imageUrl": null,
+        "cookieImageUrl": "/images/cookie-winner-2025.jpg"
+      },
+      "teams": [
+        {
+          "teamId": "2025-001",
+          "teamName": "Ho Ho Hoes",
+          "players": ["Michaela", "Kwasi"],
+          "score": 41,
+          "gameScores": [8, 10, 1, 1, 6, 10],
+          "cookieBonus": 5,
+          "place": 1,
+          "isWinner": true,
+          "isCookieWinner": true,
+          "videoUrl": null
+        },
+        {
+          "teamId": "2025-002",
+          "teamName": "Holly Jolly",
+          "players": ["Celia", "Jared", "Cirilla", "Russell"],
+          "score": 34,
+          "gameScores": [10, 4, 8, 6, 5, 1],
+          "cookieBonus": 0,
+          "place": 2,
+          "isWinner": false,
+          "videoUrl": null
+        },
+        {
+          "teamId": "2025-003",
+          "teamName": "The Lone Oakes",
+          "players": ["Brian", "Hannah"],
+          "score": 31,
+          "gameScores": [6, 8, 10, 5, 1, 1],
+          "cookieBonus": 0,
+          "place": 3,
+          "isWinner": false,
+          "videoUrl": null
+        },
+        {
+          "teamId": "2025-004",
+          "teamName": "Wet Bandits",
+          "players": ["Brian", "Tracey"],
+          "score": 27,
+          "gameScores": [1, 1, 6, 1, 10, 8],
+          "cookieBonus": 0,
+          "place": 4,
+          "isWinner": false,
+          "videoUrl": null
+        },
+        {
+          "teamId": "2025-005",
+          "teamName": "Nutcrackers",
+          "players": ["Xavier", "Andria"],
+          "score": 25,
+          "gameScores": [4, 6, 5, 3, 4, 3],
+          "cookieBonus": 0,
+          "place": 5,
+          "isWinner": false,
+          "videoUrl": null
+        },
+        {
+          "teamId": "2025-006",
+          "teamName": "Ho Ho Hosts",
+          "players": ["Stephen", "Tiffany"],
+          "score": 23,
+          "gameScores": [1, 3, 3, 10, 2, 4],
+          "cookieBonus": 0,
+          "place": 6,
+          "isWinner": false,
+          "videoUrl": null
+        },
+        {
+          "teamId": "2025-007",
+          "teamName": "Ho Ho Hold My Beer",
+          "players": ["Philippe", "Emerson"],
+          "score": 23,
+          "gameScores": [5, 5, 1, 4, 3, 5],
+          "cookieBonus": 0,
+          "place": 6,
+          "isWinner": false,
+          "videoUrl": null
+        },
+        {
+          "teamId": "2025-008",
+          "teamName": "The Grinch",
+          "players": ["Alex"],
+          "score": 18,
+          "gameScores": [3, 2, 4, 8, 8, 1],
+          "cookieBonus": 0,
+          "place": 8,
+          "isWinner": false,
+          "videoUrl": null
+        },
+        {
+          "teamId": "2025-009",
+          "teamName": "Shrek is Christmas Adjacent (S.I.C.A)",
+          "players": ["Sean", "Katie"],
+          "score": 11,
+          "gameScores": [1, 1, 1, 1, 1, 6],
+          "cookieBonus": 0,
+          "place": 9,
+          "isWinner": false,
+          "videoUrl": null
+        },
+        {
+          "teamId": "2025-010",
+          "teamName": "The Jolly Elf",
+          "players": ["Lindsay"],
+          "score": 10,
+          "gameScores": [2, 1, 2, 2, 1, 2],
+          "cookieBonus": 0,
+          "place": 10,
+          "isWinner": false,
+          "videoUrl": null
+        }
+      ]
     },
     {
       "year": 2024,
